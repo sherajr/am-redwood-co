@@ -1,7 +1,7 @@
 /** Primary editing surface: update facts, services and marketing copy here. */
 export const business = {
     name: "A & M Redwood Co",
-    url: "https://amredwoodco.com",
+    url: "https://amredwood.com",
     phone: "831-794-3305",
     phoneHref: "tel:+18317943305",
     textHref: "sms:+18317943305",

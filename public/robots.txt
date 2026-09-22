@@ -3,4 +3,4 @@ Allow: /
 Disallow: /manage
 Disallow: /api/
 
-Sitemap: https://amredwoodco.com/sitemap.xml
+Sitemap: https://amredwood.com/sitemap.xml
