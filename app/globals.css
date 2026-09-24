@@ -510,6 +510,104 @@ p {
   font-size:1rem!important;
   font-style:italic
 }
+.work-heading {
+  text-align:center;
+  max-width:640px;
+  margin-inline:auto
+}
+.work-heading h2 {
+  margin-top:23px
+}
+.work-heading>p:not(.eyebrow) {
+  color:#657066;
+  margin-top:20px
+}
+.work-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:55px;
+  margin-top:60px
+}
+.work-compare {
+  position:relative;
+  aspect-ratio:4/3;
+  overflow:hidden;
+  background:#e9eee5;
+  cursor:pointer
+}
+.work-compare:focus-visible {
+  outline:3px solid #b5cbb3;
+  outline-offset:4px
+}
+.work-photo {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+.work-before {
+  opacity:0;
+  transition:opacity .35s ease
+}
+.work-compare:hover .work-before,
+.work-compare:focus-visible .work-before {
+  opacity:1
+}
+.work-hint {
+  position:absolute;
+  z-index:2;
+  top:10px;
+  right:10px;
+  display:flex;
+  align-items:center;
+  gap:5px;
+  color:#fff;
+  font-size:.625rem;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  padding:5px 9px;
+  border-radius:3px;
+  background:rgba(15,38,28,.55);
+  transition:opacity .35s ease
+}
+.work-compare:hover .work-hint,
+.work-compare:focus-visible .work-hint {
+  opacity:0
+}
+.work-tag {
+  position:absolute;
+  z-index:2;
+  left:10px;
+  bottom:10px;
+  color:#fff;
+  font-size:.625rem;
+  font-weight:600;
+  letter-spacing:.1em;
+  padding:4px 9px;
+  border-radius:3px;
+  background:rgba(15,38,28,.68);
+  transition:opacity .35s ease
+}
+.work-tag-before {
+  opacity:0
+}
+.work-compare:hover .work-tag-after,
+.work-compare:focus-visible .work-tag-after {
+  opacity:0
+}
+.work-compare:hover .work-tag-before,
+.work-compare:focus-visible .work-tag-before {
+  opacity:1
+}
+.work-pair h3 {
+  font-family:Georgia,serif;
+  font-weight:400;
+  font-size:1.15rem;
+  letter-spacing:-.01em;
+  margin-top:18px
+}
 .process-heading {
   text-align:center
 }
@@ -964,6 +1062,9 @@ p {
   .about-grid {
     gap:6%
   }
+  .work-grid {
+    gap:35px
+  }
   .founders {
     gap:15px
   }
@@ -1130,6 +1231,15 @@ p {
   .founders {
     gap:30px;
     flex-wrap:wrap
+  }
+  .work-heading {
+    text-align:left;
+    max-width:none
+  }
+  .work-grid {
+    grid-template-columns:1fr;
+    gap:36px;
+    margin-top:38px
   }
   .process-heading {
     text-align:left

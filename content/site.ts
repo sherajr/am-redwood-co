@@ -19,6 +19,11 @@ export const services = [
     { id: "care", number: "05", title: "Care & companionship", summary: "Thoughtful support, with a human touch.", items: ["Caregiving", "Companionship care"] },
     { id: "life", number: "06", title: "Music & mountain life", summary: "Good company. New skills. A favorite new spot.", items: ["Guitar lessons", "Santa Cruz Mountain tours", "Cool-spot consulting"] },
 ];
+export const beforeAfter = [
+    { id: "canopy", title: "Overhangs & patio covers", before: { src: "/images/work/canopy-before.jpg", alt: "A worn canvas tent sheltering a propane fill station" }, after: { src: "/images/work/canopy-after.jpg", alt: "A new wood-framed shelter with a metal roof over the propane fill station" } },
+    { id: "garden", title: "Gardening & yard care", before: { src: "/images/work/garden-before.jpg", alt: "An overgrown garden bed crowded with weeds and clutter" }, after: { src: "/images/work/garden-after.jpg", alt: "The same garden area cleared, with a tidy path and trellis" } },
+    { id: "clearing", title: "Demolition & clearing", before: { src: "/images/work/clearing-before.jpg", alt: "Overgrown brush and debris piled against the side of a house" }, after: { src: "/images/work/clearing-after.jpg", alt: "The same area cleared down to bare ground, opening up defensible space" } },
+];
 export const steps = [
     { number: "01", title: "Tell us what’s on your list.", description: "Call or text us about the job. A few photos can help us understand what you have in mind." },
     { number: "02", title: "Make a plan together.", description: "We’ll talk through the scope, timing, and price before the work begins." },
